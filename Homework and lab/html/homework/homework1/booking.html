@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!--GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik:400,500" rel="stylesheet">
+
+	<!-- INCLUDE THIS CSS -->
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<section id="container">
+		<div id="content">
+			<!--FORM STRUCTURE STARTS HERE-->
+			<div id="form">
+				<form id="easyform" name="contact" method="post" action="assets/process_mail_form.php" onSubmit="return validate()">
+				<!--<form id="easyform" name="contact" method="post" action="process_smtp_form.php" onSubmit="return validate()">-->
+					<!--Flying from INPUT-->
+					<div class="input">
+                        <label for="name"><b>Flying from</b></label> <br>
+                        <select id="name" name="Country" style="height: 40px; width: 220px;">
+                            <option id ="01" selected="selected" >Karachi, Pakist</option>
+                            <option id ="02" >AUSTRALIA</option>
+                        </select>
+                    </div>  
+					<!--EMAIL INPUT-->
+					<div class="input last">
+						<label for="email"><b>To</b></label> <br>
+                        <select id="name" name="Country" style="height: 40px; width: 220px;">
+                            <option id ="01" selected="selected" >Isiamabad, Pai</option>
+                            <option id ="02" >AUSTRALIA</option> 
+                        </select>
+                    </div>                    
+					<!--COMPANY INPUT-->
+					<div class="input">
+						<label for="email"><b>Departing</b></label><br>
+						<input type="date" name="company" class="text" id="company" style="height: 40px; width: 220px;"/>
+                    </div>                    
+					<!--PHONE INPUT-->
+					<div class="input last">
+						<label for="phone"><b>Returning</b></label><br>
+						<input type="date" name="phone" class="text last" id="phone" style="height: 40px; width: 220px;" />
+                    </div>
+                    <!--COMPANY INPUT-->
+					<div class="inputa">
+						<label for="email"><b>Adult</b></label><br>
+						<input type="number" name="company" class="text" id="company" min="1" max="90" placeholder="1" style="height: 40px; width: 80px;" />
+                    </div>
+                    <!--COMPANY INPUT-->
+					<div class="inputa">
+						<label for="email"><b>Child</b></label><br>
+						<input type="number" name="company" class="text" id="company" min="0" max="90" placeholder="0" style="height: 40px; width: 80px;"/>
+                    </div>
+                            <!--COMPANY INPUT-->
+					<div class="inputa">
+                        <label for="email"><b>Infant</b></label><br>                        
+						<input type="number" name="company" class="text" id="company" min="0" max="90" placeholder="0" style="height: 40px; width: 80px;"/>
+                    </div>
+                    <!--COMPANY INPUT-->
+					<div class="inputa ">
+						<label style="color: orangered; " for="email"><b>Currency</b> </label><br>
+                        <select id="name" name="Country" style="height: 40px; width: 80px;"">
+                            <option id ="01" selected="selected" >PKR</option>
+                            <option id ="02" >THB</option>
+                        </select>
+                    </div>
+					<!--VERIFICATION AREA-->
+					<div class="verification">					
+						<button type='submit' class="button" id='send_message' style="background-color: orangered;">SEARCH</button>
+					</div>	
+				</form>
+			<div style="clear:both"></div>	
+			</div>
+			<!--FORM STRUCTURE ENDS HERE-->
+		</div>
+	</section>
+</body>	
+</html>

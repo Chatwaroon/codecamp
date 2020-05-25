@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <center><caption> <h3>ทำแบบฟอร์มสั่ง pizza </h3> </caption>
+   <table border="2" height="100%" width="30%" > 
+       <thead>
+           <tr>
+               <th colspan="2" >Pizza Shop 2.0 </th>
+           </tr>
+       </thead>
+       <tbody>
+           <tr> 
+               <td><label for="fname"> Name:</label> </td>
+               <td><input type="text" id="fname" name="fname"> </td>
+           </tr>
+           <tr> 
+            <td><label for="Pizza Topping">Pizza Topping</label> </td>
+            <td>
+              <input type="radio" id="Supreme" name="gender" value="male">
+              <label for="male">Supreme</label><br>
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female">Vegetarian</label><br>
+              <input type="radio" id="other" name="gender" value="other">
+              <label for="other">Hawaiian</label>
+              
+            </td>
+        </tr>
+        <tr> 
+            <td><label for="Pizza Sauce">Pizza Sauce</label> </td>
+            <td> <select id="Pizza Sauce">
+              <option value="Tomato">Tomato</option>
+                 </select>
+              </td>
+        </tr>
+        <tr> 
+            <td><label for="Optional Extras">Optional Extras</label> </td>
+            <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+              <label for="vehicle1">Extra Cheese</label>
+              <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+              <label for="vehicle2">Gluten Free Base</label>
+            </td>
+        </tr>
+        <tr> 
+            <td colspan="2" rowspan="3"><label for="Optional Extras">Delivery Instruction:</label><br>
+            <textarea cols= "45" rows= "5"> </textarea> <br>
+            <input type= "submit" name= "button" id= "button" value= "Send my Order">
+            </td> 
+         </tr>
+       </tbody>
+   </table>
+      </center>
+</body>
+</html>
