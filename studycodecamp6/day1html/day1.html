@@ -1,0 +1,486 @@
+<!DOCTYPE html> <!--กำหนดประเภทของเอกสาร-->
+<html lang="en"> <!--กำหนดเอกสารHTML-->
+<head>  <!--มีข้อมูลเมตา / ข้อมูลสำหรับเอกสาร-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <!-- กำหนดหัวเรื่องสำหรับเอกสาร-->
+</head>
+<body> <!--กำหนดเนื้อหาของเอกสาร-->
+    <h1>ประวัติส่วนตัว</h1> <!--กำหนดหัวเรื่อง HTML ให้เป็นตัวหนามี่ตั้งแต่h1-h6-->
+    <p>Myname is Chatwaroon Boonprakob <strong>Mint</strong></p> <!--พารากราฟ แทรกstrong จะเป็นตัวหนา -->
+    <em>first</em><em>second</em><em>third</em> <!--ตัวเอียงแต่จะติดกัน-->
+    <br> <!--เว้นบรรทัด-->
+    <p>fourth</p><p>fifth</p><p>sixth</p> <!--ตัวหนังสือจะเว้นบรรทัดกัน ไม่ติดกัน-->
+     <img src="https://i.pinimg.com/236x/37/cd/97/37cd971672abc848f81794730b470a15.jpg"> <!--นำURLของภาพมาแปะไว้ตรงscr-->
+    <hr> <!--กำหนดการเปลี่ยนแปลงเฉพาะเรื่องในเนื้อหา จะเป็นเส้นกั้นหน้า-->
+    <h1>Formatting</h1>
+    The <abbr title="World Health Organization">WHO</abbr> was founded in 1948. <!--คำย่อหรือตัวย่อควรถูกทำเครื่องหมายด้วย แท็ก<abbr> :-->
+       <br>
+    <address>
+        Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+    </address> <!--แท็กกำหนดข้อมูลที่ติดต่อสำหรับผู้เขียน / เจ้าของเอกสารหรือบทความ
+                ข้อมูลการติดต่ออาจเป็นที่อยู่อีเมล URL ที่อยู่จริงหมายเลขโทรศัพท์หมายเลขอ้างอิงสื่อสังคมออนไลน์ ฯลฯ-->
+     <p>This is normal text - <b>and this is bold text</b>.</p> <!--ทำให้ข้อความบางส่วนเป็นตัวหนา(โดยไม่ทำเครื่องหมายว่าสำคัญ) :--> 
+     <ul>
+        <li>User <bdi>hrefs</bdi>: 60 points</li>
+        <li>User <bdi>jdoe</bdi>: 80 points</li>
+        <li>User <bdi>إيان</bdi>: 90 points</li>
+      </ul> <!--แยกชื่อผู้ใช้ออกจากการตั้งค่าทิศทางข้อความโดยรอบ-->
+      <bdo dir="rtl">
+        This text will go right-to-left.
+     </bdo> <!--ระบุทิศทางข้อความ:-->
+     <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+        </blockquote>  <!--ส่วนที่ยกมาจากแหล่งอื่น:--> 
+        <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p> <!--ข้อความใน<cite>องค์ประกอบที่มักจะแสดงผลในตัวเอียง-->
+         <p>The HTML <samp>button</samp> tag defines a clickable button.</p>
+
+         <p>The CSS <code>background-color</code> property defines the background color of an element.</p> <!--ตัวที่อยู่ในcode จะตังเล็กกว่าตัวที่อยู่ในP-->
+         <p>My favorite color is <del>blue</del> <ins>red</ins>!</p> <!--del จะขีดฆ่า ส่วนinsจะเน้นข้อความขีดข้างล่าง-->
+         <p><dfn>HTMl</dfn> is the standard markup language for creating web pages.</p> <!--พาเรนต์ที่ใกล้ที่สุดของ<dfn>แท็กจะต้องมีคำจำกัดความ -->   
+        <p>You <em>have</em> to hurry up!</p> <!--ในemจะเป็นตัวเอียง-->
+        <p><i>Lorem ipsum</i> is the most popular filler text in history.</p> <!--แทรกiคือตัวเอียง-->
+        <p>Do not forget to buy <mark>milk</mark> today.</p> <!--จะเน้นข้อความ-->
+        <label for="disk_c">Disk usage C:</label>
+        <meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br>
+        
+        <label for="disk_d">Disk usage D:</label>
+        <meter id="disk_d" value="0.6">60%</meter> <!--แสดงคล้ายกราฟแท่งแสดงอัตราส่วน-->
+        <hr>
+        <pre>
+            Text in a pre element
+            is displayed in a fixed-width
+            font, and it preserves
+            both spaces and
+            line breaks
+            </pre> <!--จะเว้นวรรคตามที่เรากำหนดเลย-->
+        <hr>
+        <pre>Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks
+</pre><label for="file">Downloading progress:</label>
+<progress id="file" value="32" max="100"> 32% </progress> <!--<progress>แท็กแสดงให้เห็นถึงความคืบหน้าของงาน คล้ายๆเปอร์เชนของแบต-->
+    <p>WWF's goal is to:
+        <q>Build a future where people live in harmony with nature.</q> <!--แทรกq จะแสดงเครื่องหมาคำพูด-->
+        We hope they succeed.</p>
+        <p><s>My car is blue.</s></p> <!--แทรกsคือขีดฆ่าข้อความที่ไม่ถูกต้อง -->
+        <p>My new car is silver.</p>
+<p>Message from my computer:</p>
+
+<p><samp>File not found.<br>Press F1 to continue</samp></p>
+<p>Message from my computer:</p>
+
+<p><samp>File not found.<br>Press F1 to continue</samp></p> <!--ตัวจะเล็กลงจากความเป็นจริง--> 
+<p>This is some normal text.</p>
+<p><small>This is some smaller text.</small></p><!--ข้อความจะเล็กลง-->
+<strong>Strong text</strong> <!--ตัวหนา ข้อความสำคัญ -->
+<p>This text contains <sub>subscript</sub> text.</p> <!--sub ข้อความจะห้องด้านล่าง-->
+<p>This text contains <sup>superscript</sup> text.</p><!--supจะห้อยอยู่ข้างบน-->
+<hr>
+<p>We open at <time>10:00</time> every morning.</p>
+
+<p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
+<p>This is a <u>parragraph</u>.</p> <!--ขีดเส้นใต้-->
+<p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p><!--แสดงออกทางคณิตศาสตร์ ภายในเนื้อหาจะแสดงมักจะอยู่ในตัวเอียง-->
+<p>
+    To learn AJAX, you must be familiar with the XML<wbr>Http<wbr>Request Object.<!--ช้<wbr>องค์ประกอบเพื่อเพิ่มโอกาสในการแบ่งคำ
+  -->
+  <hr>
+  <h1>Forms and Input</h1>
+  <form action="/action_page.php" method="get">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="Submit">
+  </form> <!--<form>แท็กใช้ในการสร้างรูปแบบ HTML สำหรับการป้อนข้อมูลของผู้ใช้-->
+      <hr>
+      <h1> input </h1> <!--<input>องค์ประกอบเป็นองค์ประกอบที่สำคัญที่สุดฟอร์ม-->
+      <input type="button"><br>
+      <input type="button" value="Click me" onclick="msg()"> > <!--จะเป็นปุ่มคลิก-->
+      <hr>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> I have a bike</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> I have a car</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> I have a boat</label><br> <!--ปุ๋มให้ติ๊กเลือก-->
+<hr>      
+      
+      <label for="favcolor">Select your favorite color:</label>
+      <input type="color"> <!--สี-->
+     <hr>
+        <input type="date">
+        <label for="birthday">Birthday:</label> <!--กรอกข้อมูลสำหรับวันเกิด-->
+        <input type="date" id="birthday" name="birthday">
+        <label for="email">email</label>
+        <input type="email" id="email" name="email">    
+    <hr>
+      <input type="datetime-local"> 
+      <label for="birthdaytime">Birthday (date and time):</label>
+      <input type="datetime-local" id="birthdaytime" name="birthdaytime"> <!--บอกวันเดือนปีและเวลา-->
+      <hr>
+      <input type="file">
+      <label for="myfile">Select a file:</label>
+      <input type="file" id="myfile" name="myfile"> <!--สามารถเลือกไฟล์ได้เลย-->
+      <hr>
+      <input type="hidden" id="custId" name="custId" value="3487"> <!--กรอกตัวเลขให้ตรงกับที่ตั้งไว้-->
+      <hr>
+      <input type="image" src="https://i.pinimg.com/736x/6f/24/8f/6f248fe1aa6b2fe28cd18f04f5d681c3.jpg" alt="Submit" width="200" height="300"> <!--สำหรับใส่รูป-->
+      <hr>
+      <label for="bdaymonth">Birthday (month and year):</label>
+      <input type="month" id="bdaymonth" name="bdaymonth"> <!--กรอกวันเกิด-->
+      <hr>
+      <label for="quantity">Quantity (between 1 and 5):</label>
+      <input type="number" id="quantity" name="quantity" min="1" max="5"> <!--ช่องกรอกเลข โดยบอกค่าสูงสุดต่ำสุด หรือ กำหนดเขตข้อมูลสำหรับการป้อนตัวเลข -->
+      <hr>
+      <label for="pwd">Password:</label>
+      <input type="password" id="pwd" name="pwd"> <!--กำหนดฟิลด์รหัสผ่าน (ตัวอักษรถูกปิดบัง)-->
+      <hr>
+      <label for="ooo">สูนนนน</label>
+      <input type="password" id="ooo" name="ooo">
+      <hr>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label><br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br>
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label> <!--ปุ่มตัวเลือกให้ผู้ใช้เลือกหนึ่งในตัวเลือกที่ จำกัด เท่านั้น:-->
+       <hr>
+       <label for="points">Points (between 0 and 10):</label>
+       <input type="range" id="points" name="points" min="0" max="10">  <!--กำหนดตัวควบคุมช่วง (เช่นตัวควบคุมแถบเลื่อน):-->
+       <hr>
+       <input type="reset"> <!--แสดงปุ่มรีเชต-->
+       <hr>
+       <label for="gsearch">Search Google:</label>
+       <input type="search" id="gsearch" name="gsearch"> <!--กรอกข้อมูลค้นหา-->
+       <hr>
+       <input type="submit"> <!--ปุ่มsubmit-->
+       <hr>
+       <input type="submit">
+       <hr>
+       <label for="phone">Enter your phone number:</label>
+       <input type="tel" id="phone" name="phone" >
+       <hr>
+       <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"> <!--กำหนดฟิลด์ข้อความบรรทัดเดียวที่ผู้ใช้สามารถป้อนข้อความลงใน:-->
+       <hr>
+       <label for="appt">Select a time:</label>
+       <input type="time" id="appt" name="appt"> <!--กรอกเวลา-->
+       <hr>
+       <label for="homepage">Add your homepage:</label>
+       <input type="url" id="homepage" name="homepage"> <!--กำหนดฟิลด์สำหรับป้อน URL:-->
+      <hr>
+      <label for="week">Select a week:</label>
+      <input type="week" id="week" name="week">
+      <hr>
+      <hr>
+      <hr>
+      <hr>
+      <hr>
+      <h1>HTML <textarea> Tag</h1>
+        <label for="w3mission">W3Schools mission:</label>
+
+        <textarea id="w3mission" rows="9" cols="400">
+        At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+        </textarea> <!--จะเป็นแบบกล่องข้อความ-->
+      <hr>
+      <label for="cars">Choose a car:</label>
+
+<select id="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select> <!--Create a drop-down list with four options:-->
+<hr>
+<label for="cars">Choose a car:</label>
+<select id="cars">
+  <optgroup label="Swedish Cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+  </optgroup>
+  <optgroup label="German Cars">
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </optgroup>
+</select> <!--กดdrop-down แต่มีตัวเลือกย่อย-->
+<hr> 
+<form action="/action_page.php">
+  <label for="male">Male</label>
+  <input type="radio" name="gender" id="male" value="male"><br>
+  <label for="female">Female</label>
+  <input type="radio" name="gender" id="female" value="female"><br>
+  <label for="other">Other</label>
+  <input type="radio" name="gender" id="other" value="other"><br><br>
+  <input type="submit" value="Submit">
+</form> <!--กดเลือกแล้วกดsubmit-->
+<hr>
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Personalia:</legend> <!--Personalia: จะเป็นกรอบที่มีตัวหนังสือ-->
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form> <!--การกรอกแบบfrom สำหรับกรอกข้อมูล -->
+<hr>
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+<label for="browser">Choose your browser from the list:</label>
+<input list="browsers" name="browser" id="browser">
+
+<datalist id="browsers">
+  <option value="Edge">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist> <!--เป็นรายการให้เลือก แบบdrop-down-->
+<br>
+<hr>
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+  <input type="range" id="a" value="50">100
+  +<input type="number" id="b" value="50">
+  =<output name="x" for="a b"></output>
+</form> <!--ปุ๋มคลายๆๆการเพิ่มเสียง-->
+<hr>
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+<hr>
+<figure>
+  <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
+  <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+</figure>
+<hr>
+<h1>audio controls</h1>
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio> <!--เล่นไฟล์เสียง:-->
+<hr>
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<hr>
+<video width="320" height="240" controls>
+  <source src="forrest_gump.mp4" type="video/mp4">
+  <source src="forrest_gump.ogg" type="video/ogg">
+  <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+  <track src="subtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+</video> <!--เป็นวิดีโอให้เลย-->
+<hr>
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<hr>
+<h1>Links</h1>
+<a href="https://www.w3schools.com">Visit W3Schools.com!</a> <!--แทรกlinks-->
+<hr>
+
+<nav>
+  <a href="/html/">HTML</a> |
+  <a href="/css/">CSS</a> |
+  <a href="/js/">JavaScript</a> |
+  <a href="/python/">Python</a>
+</nav> <!--ชุดลิงก์การนำทาง:HTML | CSS | JavaScript | Python-->
+<hr>
+<h1>Lists</h1>
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul> <!--ไม่ได้เรียงลำดับ:-->
+<hr>
+<ol>
+  <li>Coffee</li>
+  <ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul> 
+  <li>Tea</li>
+  <ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul> 
+  <li>Milk</li>
+</ol>
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul> 
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul> 
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul> 
+
+<ol start="50">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol> <!--เอาไปแทรกกัน ก็สามาารถบอกลายละเอียดย่อยๆๆได้-->
+<hr>
+<dl>
+  <dt>Coffee</dt>
+  <dd>Black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>White cold drink</dd>
+</dl>  <!--รายการคำอธิบายพร้อมเงื่อนไขและคำอธิบาย:-->
+<hr>
+<h1>Styles and Semantics</h1>
+<style>
+  .myDiv {
+    border: 5px outset red;
+    background-color: lightblue;
+    text-align: center;
+  }
+  </style> <!-- เป็นการกำหนดขนาด สี -->
+  <div class="myDiv">
+    <h2>This is a heading in a div element</h2>
+    <p>This is some text in a div element.</p>
+  </div> <!--divคือกำหนดกล่องข้อความ-->
+  <hr>
+  <p>My mother has <span style="color:blue">blue</span> eyes.</p>
+  <hr>
+  <article>
+    <header>
+      <h1>A heading here</h1>
+      <p>Posted by John Doe</p>
+      <p>Some additional information here</p>
+    </header>
+    <p>Lorem Ipsum dolor set amet....</p>
+  </article> <!--header จะอยู่ด้านบน-->
+  <hr>
+  <footer>
+    <p>Author: Hege Refsnes</p>
+    <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+  </footer> <!--จะอยู่ด้านล่าง -->
+  <hr>
+  <main>
+    <h1>Most Popular Browsers</h1>
+    <p>Chrome, Firefox, and Edge are the most used browsers today.</p>
+  
+    <article>
+      <h2>Google Chrome</h2>
+      <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+    </article>
+  
+    <article>
+      <h2>Mozilla Firefox</h2>
+      <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+    </article>
+  
+    <article>
+      <h2>Microsoft Edge</h2>
+      <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+    </article>
+  </main> <!--เนื้อหาของเอกสาร-->
+  <hr>
+  <section>
+    <h2>WWF</h2>
+    <p>The World Wide Fund for Nature (WWF) is....</p>
+  </section>
+  <hr>
+  <article>
+    <h2>Google Chrome</h2>
+    <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+    </article>
+    
+    <article>
+    <h2>Mozilla Firefox</h2>
+    <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+    </article>
+    
+    <article>
+    <h2>Microsoft Edge</h2>
+    <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+    </article> <!--คล้ายๆกับmain -->
+    <hr>
+    <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+<aside>
+<h4>Epcot Center</h4>
+<p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</aside>
+<hr>
+<details>
+  <summary>Epcot Center</summary>
+  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</details> <!--Epcot Center เหมือนสามเหลี่ยมที่สามารถกดดูข้อมูลได้-->
+<hr>
+<dialog open>This is an open dialog window</dialog>
+<hr>
+<h1>การเขียนโปรแกรม</h1>
+<embed type="image/jpg" src="pic_trulli.jpg" width="300" height="200">
+
+
+
+ 
+
+
+
+
+
+
+
+      </p>
+    
+
+  
+
+
+                  
+
+
+
+
+        
+
+
+         
+
+</body>
+</html>
