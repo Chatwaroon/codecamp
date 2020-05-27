@@ -1,0 +1,193 @@
+.heading{
+    color: aqua;
+}
+#M1{
+    color: brown;
+    ////////////////////////
+}
+input:checked{  /*ติ๊กลงไปในช่องว่าง*/
+    width: :15px;
+    height:15px;s
+}
+div:hover{ /*เมาเือนไปโดนค่อยจะขึ้น pseudo class จะมีแบบนี้ตามหลังอันเดียว :*/
+    color: chocolate;
+}
+/*ให้linkที่แสดงในลักษณะสีแดง */
+a:link {
+    color: red;
+  }
+  
+  /* กดlinkแล้วจะขึ้นสีเขียว */
+  a:visited {
+    color: green;
+  }
+  
+  /* เมาเือนไปโดนแล้วจะเป็นสีชมพู */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* พอกดแล้วจะเป็นสีฟ้า*/
+  a:active {
+    color: blue;
+  }
+  a:active {
+    background-color: yellow;
+  }
+  /////////////////////////////////
+  input:checked {
+    height: 50px;
+    width: 50px;
+  }
+  input[type=text]:enabled {
+    background: #ffff00;
+  }
+///////////////////////////////
+img{
+    border-radius: 15px;
+    opacity:0.1;
+}
+  
+  input[type=text]:disabled {
+    background: #dddddd;
+  }
+//////////////////////////////////
+
+  p:empty {
+    width: 100px;
+    height: 20px;
+    background: coral;
+  }
+  ////////////////////////////
+  input[type=text]:enabled {
+    background: #ffff00;
+  }
+  
+  input[type=text]:disabled {
+    background: #dddddd;
+  }
+  /////////////////////////////
+  p:first-child {
+    background-color: yellow; /*แท็กที่เป็นลูกไส้ในของมัน*/
+  }
+  ///////////////////////////////
+  p1:first-of-type {    /*ตัวแรกจะขึ้นbackground*/
+    background: red;
+  }
+  input:focus {
+    background-color: yellow;
+    ////////////////////////////////////////
+  }
+  a:hover {
+    background-color: yellow;
+    //////////////////////////////////////
+    input:in-range {
+        border: 2px solid yellow;
+    }
+/////////////////////////////////////
+input:invalid {
+    border: 2px solid green;
+}  
+p:last-child {
+    background: #ff0000;
+  }
+//////////////////////////////////////////
+p:last-of-type {
+    background: #ff0000;
+  }
+/////////////////////////////////////////////  
+a:link {
+    background-color: yellow;
+  }
+/////////////////////////////////////////////////////
+p {
+    color: #000000;
+  }
+  //////////////////////////////////////////
+  :not(p) {
+    color: #ff0000;
+  }
+  //////////////////////////////////////////////////////////////////////////////////////////////////////////
+  p:nth-child(2) {
+    background: red;
+///////////////////////////////////////////
+p:nth-last-child(2) {
+    background: red;
+  } 
+  p:nth-last-of-type(2) {
+    background: red;
+  }
+///////////////////////////////////////
+input:optional {
+    background-color: yellow;
+  }
+///////////////////////////////////////////////
+input:out-of-range {
+    border: 2px solid red;
+  }
+///////////////////////////////////////////////
+input:-moz-read-only { /* For Firefox */
+    background-color: yellow;
+  }
+  
+  input:read-only {
+    background-color: yellow;
+  }
+  ////////////////////////////////////
+  input:read-write {
+    background-color: yellow;
+  }
+  ///////////////////////////////////
+  input:required {
+    background-color: yellow;
+  }
+  /////////////////////////////////////
+  <style> 
+:root {
+  background: #ff0000;
+}
+///////////////////////////
+input:valid {
+    background-color: yellow;
+  }
+  ////////////////////////////////
+  a:visited {
+    color: pink;
+  } 
+  ////////////////////////////////////////////////////////////////////////////////////////////////
+  /////////////////////////////////////////////////////////////////////////////////////////////////////
+  p::after { 
+    content: " - Remember this";
+  }
+  //////////////////////////////////////
+  p::before {
+    content: "Read this -";
+  }
+  //////////////////////////////
+  p::first-letter {
+    font-size: 200%;
+    color: #8A2BE2; /*ตัวแรกจะตัวใหญ่*/
+  }
+
+  ///////////////////////////////////////
+  p::first-line { /*จะเน้นบรรทัดแรก*/
+    background-color: yellow;
+  }
+  ///////////////////////////////////////
+  ::-moz-selection { /* Code for Firefox */
+    color: red;
+    background: yellow;
+  }
+  
+  ::selection {
+    color: red;
+    background: yellow;
+  }
+  /////////////////////////////////
+  .pDisplay {
+      display: inline;
+  }
+
+
+
+

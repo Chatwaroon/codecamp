@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="testcss.css"> <!--link แบบexternal-->
+</head>
+<body>
+    <h1 class="heading " > Mint </h1> <!--ส่วนselector-->
+    <h2 id="M1"> mint</h2><hr>
+
+    <h2>Pseudo class</h2>
+    <from class="formChecbox"> <!--ติ๊กลงไปในช่องว่าง-->
+        <input type="checkbox"checked>one</input>
+        <input type="checkbox">two</input>
+        <input type="checkbox">three</input>
+    </from>
+    <h2> combinator test</h2>
+    <div>
+        <p>paragraph 1 in div </p>
+        <p>paragraph 2 in div</p>
+        <p>paragraph 3 in div</p>
+    </div>
+    <p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
+<p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+<p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+<hr>
+<h1>attive</h1>
+<a href="https://www.w3schools.com">w3schools.com</a>
+<a href="http://www.wikipedia.org">wikipedia.org</a>
+
+<p><b>Note:</b> The :active selector styles the active link.</p>
+<hr>
+<h2>checked</h2>
+<form action="">
+    <input type="radio" checked="checked" value="male" name="gender"> Male<br>
+    <input type="radio" value="female" name="gender"> Female<br>
+    <input type="checkbox" checked="checked" value="Bike"> I have a bike<br>
+    <input type="checkbox" value="Car"> I have a car 
+  </form>
+  <hr>
+  <h1>disabled</h1>
+  <form action="">
+    First name: <input type="text" value="Mickey"><br>
+    Last name: <input type="text" value="Mouse"><br>
+    Country: <input type="text" disabled="disabled" value="Disneyland">
+  </form>
+  <hr>
+  <h2>empty</h2>
+  <p>A paragraph.</p>
+<p>Another paragraph.</p>
+<hr>
+<h1>enabled </h1>
+<form action="">
+    First name: <input type="text" value="Mickey"><br>
+    Last name: <input type="text" value="Mouse"><br>
+    Country: <input type="text" disabled="disabled" value="Disneyland">
+  </form>
+  <hr>
+  <h2>first-child</h2>
+  <p>This paragraph is the first child of its parent (body).</p>
+
+<h1>Welcome to My Homepage</h1>
+<p>This paragraph is not the first child of its parent.</p>
+
+<div>
+  <p>This paragraph is the first child of its parent (div).</p>
+  <p>This paragraph is not the first child of its parent.</p>
+</div>
+
+<p><b>Note:</b> For :first-child to work in IE8 and earlier, a DOCTYPE must be declared.</p>
+<hr>
+<h1>first-of-type</h1>
+<p>The first paragraph.</p>
+<p>The second paragraph.</p>
+<p>The third paragraph.</p>
+<p>The fourth paragraph.</p>
+
+<hr>
+<h1> focus</h1>
+<p>Click inside the text fields to see a yellow background:</p>
+
+<form>
+  First name: <input type="text" name="firstname"><br>
+  Last name: <input type="text" name="lastname">
+</form>
+
+<p><b>Note:</b> For :focus to work in IE8, a DOCTYPE must be declared.</p>
+
+<hr>
+<h1>hover</h1>
+<a href="https://www.w3schools.com">w3schools.com</a>
+<a href="https://www.wikipedia.org">wikipedia.org</a>
+
+<p><b>Note:</b> The :hover selector style links on mouse-over.</p>
+<hr>
+<h2>in-range</h2>
+<h3>A demonstration of the :in-range selector.</h3>
+
+<input type="number" min="5" max="10" value="7">
+
+<p>Try typing a number out of range (less than 5 or higher than 10), to see the styling disappear.</p>
+<hr>
+<h2>invalid</h2>
+<h3>A demonstration of the :invalid selector.</h3>
+
+<input type="email" value="supportEmail">
+
+<p>Try typing a legal e-mail address, to see the styling disappear.</p>
+
+<p><strong>Note</strong>: The :invalid selector is not supported in Internet Explorer 9 and earlier versions.</p>
+<hr>
+<h2>last-child</h2>
+
+<p>The second paragraph.</p>
+<p>The third paragraph.</p>
+<p>The fourth paragraph.</p> <!--ตัวสุดท้าย-->
+<hr>
+<h1>last-of-type</h1>
+<h1>This is a heading</h1>
+<p>The first paragraph.</p>
+<p>The second paragraph.</p>
+<p>The third paragraph.</p>
+<p>The fourth paragraph.</p> <!--ตัวสุดท้าย-->
+<hr>
+<h1>link</h1>
+<a href="https://www.w3schools.com">W3Sschools</a>
+<a href="http://www.wikipedia.org">Wikipedia</a>
+
+<p><b>Note:</b> The :link selector style links to pages you have not visited yet.</p>
+<hr>
+<h2>not selector</h2>
+<h1>This is a heading</h1>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<div>This is some text in a div element.</div>
+
+<a href="https://www.w3schools.com" target="_blank">Link to W3Schools!</a>
+<hr>
+<h1>nth-child(2)</h1> <!--กำหนดตัวที่จะเน้น-->
+<p>The first paragraph.</p>
+<p>The second paragraph.</p>
+<p>The third paragraph.</p>
+<p>The fourth paragraph.</p>
+
+<p><b>Note:</b> Internet Explorer 8 and earlier versions do not support the :nth-child() selector.</p>
+<hr>
+<h2>nth-last-child(n)</h2>
+<p>The first paragraph.</p>
+<p>The second paragraph.</p>
+<p>The third paragraph.</p>
+<p>The fourth paragraph.</p>
+
+<p><b>Note:</b> Internet Explorer 8 and earlier versions do not support the :nth-last-child() selector.</p>
+<hr>
+<h2>:nth-last-of-type(n)</h2>
+<p>The first paragraph.</p>
+<p>The second paragraph.</p>
+<p>The third paragraph.</p>
+<p>The fourth paragraph.</p>
+
+<p><b>Note:</b> Internet Explorer 8 and earlier versions do not support the :nth-last-of-type() selector.</p>
+<hr>
+<h2>optional</h2>
+<h3>A demonstration of the :optional selector.</h3>
+
+<p>An optional input element:<br><input></p>
+
+<p>A required input element:<br><input required></p>
+
+<p>The :optional selector selects form elements with no "required" attribute.</p>
+
+<p><strong>Note:</strong> The :optional selector is not supported in Internet Explorer 9 or earlier versions.</p>
+
+<hr>
+<h2>out-of-range </h2>
+<h3>A demonstration of the :out-of-range selector.</h3>
+
+<input type="number" min="5" max="10" value="17">
+
+<p>Try typing a number within the given range (between 5 and 10), to see the styling disappear.</p>
+<hr>
+<h1>read-only</h1>
+<h3>A demonstration of the :read-only selector.</h3>
+
+<p>A normal input element:<br><input value="hello"></p>
+
+<p>A readonly input element:<br><input readonly value="hello"></p>
+
+<p>The :read-only selector selects form elements with a "readonly" attribute.</p>
+
+<p><strong>Note:</strong> Firefox supports an alternative, the :-moz-read-only property.</p>
+<hr>
+<hr>read-write</h1>
+<h3>A demonstration of the :read-write selector.</h3>
+
+<p>A normal input element:<br><input value="hello"></p>
+
+<p>A readonly input element:<br><input readonly value="hello"></p>
+
+<p>The :read-write selector selects form elements with no "readonly" attribute.</p>
+
+<p><strong>Note:</strong> Firefox supports an alternative, the :-moz-read-write property.</p>
+
+<hr>
+<h2>required</h2>
+<h3>A demonstration of the :required selector.</h3>
+
+<p>An optional input element:<br><input></p>
+
+<p>A required input element:<br><input required></p>
+
+<p>The :required selector selects form elements with a "required" attribute.</p>
+
+<p>The :required selector is not supported in Internet Explorer 9 or earlier versions.</p>
+<hr>
+<h2>root</h2>
+<h1>This is a heading</h1> <!--จะเป็นสีแดงทั้งหมด-->
+<hr>
+<h2>target</h2>
+<h1>This is a heading</h1>
+
+<p><a href="#news1">Jump to New content 1</a></p>
+<p><a href="#news2">Jump to New content 2</a></p>
+
+<p>Click on the links above and the :target selector highlight the current active HTML anchor.</p>
+
+<p id="news1"><b>New content 1...</b></p>
+<p id="news2"><b>New content 2...</b></p>
+
+<p><b>Note:</b> Internet Explorer 8 and earlier versions do not support the :target selector.</p>
+
+<hr>
+<h1></h1>
+<h3>A demonstration of the :valid selector.</h3>
+
+<input type="email" value="support@example.com">
+
+<p>Try typing an illegal e-mail address, to see the styling disappear.</p>
+
+<p><strong>Note</strong>: The :valid selector is not supported in Internet Explorer 9 and earlier versions.</p>
+<hr>
+<h2>visited</h2>
+<a href="https://www.w3schools.com">W3Schools Home</a><br>
+<a href="https://www.w3schools.com/html/">W3Schools HTML Tutorial</a><br>
+<a href="https://www.w3schools.com/css/">W3Schools CSS Tutorial</a>
+
+<p><b>Note:</b> The :visited selector style links to pages you have already visited.</p>
+<hr>
+<hr>
+<hr>
+<hr>
+<h1>CSS Pseudo Elements</h1>
+<h2>::after</h2>
+<p>My name is Donald</p>
+<p>I live in Ducksburg</p>
+
+<p><b>Note:</b> For this selector to work in IE8, a DOCTYPE must be declared, and you must use the old, single-colon CSS2 syntax (:after instead of ::after).</p>
+
+<hr>
+<h2>::before</h2>
+<p>My name is Donald</p>
+<p>I live in Ducksburg</p>
+
+<p><b>Note:</b> For this selector to work in IE8, a DOCTYPE must be declared, and you must use the old, single-colon CSS2 syntax (:before instead of ::before).</p>
+
+<hr>
+<h2>::first-letter</h2>
+<h1>Welcome to My Homepage</h1>
+
+<p>My name is Donald.</p>
+<p>I live in Duckburg.</p>
+<p>My best friend is Mickey.</p>
+
+<p><b>Note:</b> For this selector to work in IE 5.5-8, you must specify the old, single-colon CSS2 syntax (:first-letter instead of ::first-letter).</p>
+<hr>
+<h2>::first-line</h2>
+<h1>WWF's Mission Statement</h1>
+<p>To stop the degradation of the planet's natural environment and to build a future in which humans live in harmony with nature, by; conserving the world's biological diversity, ensuring that the use of renewable natural resources is sustainable, and promoting the reduction of pollution and wasteful consumption.</p>
+
+<p><b>Note:</b> For this selector to work in IE 5.5-8, you must specify the old, single-colon CSS2 syntax (:first-line instead of ::first-line).</p>
+<hr>
+<h3>selection</h3>
+<h1>Select some text on this page:</h1>
+
+<p>This is a paragraph.</p>
+<div>This is some text in a div element.</div>
+
+<p><strong>Note:</strong> ::selection is not supported in Internet Explorer 8 and earlier versions.</p>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<img src="/Homework and lab/html/homework/homework1/75102022_699694897207421_7869758878148198400_n.jpg" alt="mmmmmmm">
+<hr>
+<h2> Display</h2>
+<p class="pDisplay"> monyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy</p>
+<span>span after tag p </span>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+</body>
+</html>

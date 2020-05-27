@@ -1,0 +1,70 @@
+/* .container{ justify กับ  align จะอยู่ในcontainer */
+    /* display: grid; */
+    /* grid-template-columns: auto auto auto; */
+    /* grid-template-rows: 100px 100px 100px 100px; ใส่ตามจำนวนแถว */
+    /* grid-gap: 20px; */
+    /* background-color: hotpink; */
+    /* justify-content: center; กล่องจะอยู่ตรงกลาง */
+    /* justify-content: space-evenly; ช่องว่างจะเท่ากัน */
+    /* justify-content: space-between; ช่องว่างระหว่างช่องตรงกลางจะเท่ากัน */
+    /* justify-content: space-around; พื่นที่รอบๆจะเท่ากัน */
+    /* align-items: flex-end; */
+/* } */
+ /*.container > div  {เน้นตัวลูก */
+    /* background-color: lightseagreen; */
+    /* text-align: center; */
+ /* } */
+/* .item5{ คำสั่งการรวมช่องจะอยู่ในitem */
+    /* grid-column: 1/4; ต้องการให้ต่อกัน3ช่อง */
+    /* grid-row: 1/4; แถวจะติดกัน3ช่อง */
+    /* grid-column: 1/span 2; กินคอลัม1 ถึง คอลัมที่2 */
+    /* grid-row: 1/span 3; แถวที่1ถึงแถวที่3 */
+    /* grid-area: 1/1/3/3;  */
+/* } */
+.container {
+    display: flex;
+    background-color: lightyellow;
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */
+    /* flex-flow: column wrap; ผลลัพธิ์จะเหมือนกัน */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+     /* justify-content:flex-end ; */
+
+
+
+}
+.container> div { /*เน้นตัวลูก */
+    background-color: lightseagreen;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    margin: 10px;
+ } 
+ .item5{
+     /* order: -1; ช่องที่5จะไปอยู่อันแรก */
+     /* flex-grow: 30px; */
+     /* flex-basis: 300px; */
+     
+
+ }
+ 
+ .flew > .item3 { /*เน้นตัวลูก */
+    background-color: lightseagreen;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    left: 100px;
+    /* position: relative; ก่องนั้นเลือนออกมา */
+    /* position: fixed; กล่องนั้น flex อยู่หน้าจอเสมอ */
+
+ } 
+ 
+ div p 
+ <div>
+
+ 
