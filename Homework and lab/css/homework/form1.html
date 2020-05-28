@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form1.css">
+</head>
+<body>
+    
+    <form action="/action_page.php">
+        <label for="fname"> Name<b style="color: red;">*</b>:</label> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 
+        <input type="text" id="fname" name="fname">
+        <input type="image" src="data:image/png;base64,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" alt="Submit" width="15" height="15">
+      </form>
+      <br>
+      <form action="/action_page.php">
+        <label for="Tab Text"> Tab Text<b style="color: red;">*</b>:</label>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="text" id="Tab Text" name="Tab Text">
+        <input type="image" src="data:image/png;base64,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" alt="Submit" width="15" height="15">
+      </form>
+      <br>
+      <form action="/action_page.php">
+        <label for="Tab Text"> Tab Text:</label> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.wizehive.com/webform">https://www.wizehive.com/webform/</a>
+        <input type="text" id="Tab Text" name="Tab Text">
+      </form>
+      <br>
+      <!-- <form class="M1" action="">
+      <input  type="text" disabled="disabled" value="FORM SETUP" >
+      </form> -->
+      <div>FORM SETUP</div>
+      <br>
+      <form action="/action_page.php">
+        <label for="form"> Form: </label> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+        <select name="province">
+            <option value="" selected>                 </option>
+            <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
+            <option value="กระบี่">กระบี่ </option>
+            <option value="กาญจนบุรี">กาญจนบุรี </option>
+            <option value="กาฬสินธุ์">กาฬสินธุ์ </option>
+            <option value="กำแพงเพชร">กำแพงเพชร </option>
+            <option value="ขอนแก่น">ขอนแก่น</option>
+            <option value="จันทบุรี">จันทบุรี</option>
+            <option value="ฉะเชิงเทรา">ฉะเชิงเทรา </option>
+            <option value="ชัยนาท">ชัยนาท </option>
+            <option value="ชัยภูมิ">ชัยภูมิ </option>
+            <option value="ชุมพร">ชุมพร </option>
+            <option value="ชลบุรี">ชลบุรี </option>
+            <option value="เชียงใหม่">เชียงใหม่ </option>
+            <option value="เชียงราย">เชียงราย </option>
+            <option value="ตรัง">ตรัง </option>
+            <option value="ตราด">ตราด </option>
+            <option value="ตาก">ตาก </option>
+            <option value="นครนายก">นครนายก </option>
+            <option value="นครปฐม">นครปฐม </option>
+            <option value="นครพนม">นครพนม </option>
+            <option value="นครราชสีมา">นครราชสีมา </option>
+            <option value="นครศรีธรรมราช">นครศรีธรรมราช </option>
+            <option value="นครสวรรค์">นครสวรรค์ </option>
+            <option value="นราธิวาส">นราธิวาส </option>
+            <option value="น่าน">น่าน </option>
+            <option value="นนทบุรี">นนทบุรี </option>
+            <option value="บึงกาฬ">บึงกาฬ</option>
+            <option value="บุรีรัมย์">บุรีรัมย์</option>
+            <option value="ประจวบคีรีขันธ์">ประจวบคีรีขันธ์ </option>
+            <option value="ปทุมธานี">ปทุมธานี </option>
+            <option value="ปราจีนบุรี">ปราจีนบุรี </option>
+            <option value="ปัตตานี">ปัตตานี </option>
+            <option value="พะเยา">พะเยา </option>
+            <option value="พระนครศรีอยุธยา">พระนครศรีอยุธยา </option>
+            <option value="พังงา">พังงา </option>
+            <option value="พิจิตร">พิจิตร </option>
+            <option value="พิษณุโลก">พิษณุโลก </option>
+            <option value="เพชรบุรี">เพชรบุรี </option>
+            <option value="เพชรบูรณ์">เพชรบูรณ์ </option>
+            <option value="แพร่">แพร่ </option>
+            <option value="พัทลุง">พัทลุง </option>
+            <option value="ภูเก็ต">ภูเก็ต </option>
+            <option value="มหาสารคาม">มหาสารคาม </option>
+            <option value="มุกดาหาร">มุกดาหาร </option>
+            <option value="แม่ฮ่องสอน">แม่ฮ่องสอน </option>
+            <option value="ยโสธร">ยโสธร </option>
+            <option value="ยะลา">ยะลา </option>
+            <option value="ร้อยเอ็ด">ร้อยเอ็ด </option>
+            <option value="ระนอง">ระนอง </option>
+            <option value="ระยอง">ระยอง </option>
+            <option value="ราชบุรี">ราชบุรี</option>
+            <option value="ลพบุรี">ลพบุรี </option>
+            <option value="ลำปาง">ลำปาง </option>
+            <option value="ลำพูน">ลำพูน </option>
+            <option value="เลย">เลย </option>
+            <option value="ศรีสะเกษ">ศรีสะเกษ</option>
+            <option value="สกลนคร">สกลนคร</option>
+            <option value="สงขลา">สงขลา </option>
+            <option value="สมุทรสาคร">สมุทรสาคร </option>
+            <option value="สมุทรปราการ">สมุทรปราการ </option>
+            <option value="สมุทรสงคราม">สมุทรสงคราม </option>
+            <option value="สระแก้ว">สระแก้ว </option>
+            <option value="สระบุรี">สระบุรี </option>
+            <option value="สิงห์บุรี">สิงห์บุรี </option>
+            <option value="สุโขทัย">สุโขทัย </option>
+            <option value="สุพรรณบุรี">สุพรรณบุรี </option>
+            <option value="สุราษฎร์ธานี">สุราษฎร์ธานี </option>
+            <option value="สุรินทร์">สุรินทร์ </option>
+            <option value="สตูล">สตูล </option>
+            <option value="หนองคาย">หนองคาย </option>
+            <option value="หนองบัวลำภู">หนองบัวลำภู </option>
+            <option value="อำนาจเจริญ">อำนาจเจริญ </option>
+            <option value="อุดรธานี">อุดรธานี </option>
+            <option value="อุตรดิตถ์">อุตรดิตถ์ </option>
+            <option value="อุทัยธานี">อุทัยธานี </option>
+            <option value="อุบลราชธานี">อุบลราชธานี</option>
+            <option value="อ่างทอง">อ่างทอง </option>
+            <option value="อื่นๆ">อื่นๆ</option>
+      </select>
+      <input type="submit" value="Edit">
+      </form>
+      <br>
+      <form action="/action_page.php">
+        <label for="Logo">Logo:</label> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; no logo uploaded &nbsp;
+        <input type="submit" value="Upload Logo">
+      </form>
+      <br>
+      <form action="/action_page.php">
+        <label for="Template Text">Template Text:</label> &nbsp;&nbsp; 
+        <select id="Template Text">
+          <option value="English">English</option>
+          <option value="Thai">Thai</option>
+          <option value="chinese">chinese</option>
+        </select>
+        <input type="submit" value="Edit">
+      </form>
+      <br>
+      <form action="/action_page.php">
+        <label for="Review Form">Review Form:</label> &nbsp; &nbsp;
+        <select id="Review Form">
+          <option value="Default">Default</option>
+        </select>
+      </form>
+      <br>
+      <form action="/action_page.php">
+        <label for="Review Score">Review Score:</label> &nbsp; &nbsp;
+        <select id="Review Score">
+          <option value="Rating">Rating</option>
+        </select>
+        <input type="submit" value="Reload Fields">
+      </form>
+      <br>
+      <form action="/action_page.php">
+        <label for="Scoring Type">Scoring Type:</label> &nbsp; &nbsp;&nbsp;
+        <select id="Scoring Type"> 
+          <option value="Average">Average</option>
+        </select>
+      </form>
+      <br>
+      <form action="/action_page.php">
+        <label for="Max Score"> Max Score :</label>  &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+        <input type="text" id="Max Score" name="Max Score" value="4.00" >
+      </form>
+       
+</body>
+</html>
