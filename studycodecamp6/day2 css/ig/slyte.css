@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+body,html {
+    margin: 0;
+    padding: 0; /*รีเชตค่าของbodyและhtml*/
+    font-family:'Roboto',sans-serif;
+}
+.container {
+    max-width: 940px; /*ความกว้างสูงสุด*/
+    width: 100%;
+    margin: 2em auto; /*บนล่าง2em ซ้ายขวาauto*/
+}
+.profile{
+    display: flex; /*มันจะขึ้นมาอยู่แถวเดียวกันกับโปรไฟล*/
+    justify-content: center; /*จัดให้อยู่กึ่งกลาง*/
+}
+.profile_image{
+    margin: 3em; /*มีmargin ทุกด้านของรูป */
+}
+.profile_image img{
+    border-radius: 50%; /*ทำรูปภาพให้เป็นกลมๆๆ*/
+}
+.profile_info{
+    margin-top: 2em; /*ให้อยู่แนวเดียวกันกับ profile_image img*/
+}
+.profile_info--top{
+    display: flex; /*คำว่าแก้ไขโปรไฟลกับเกียร์มาอยู่บรรทัดเดียวกันกับรูป*/
+    max-width: 300px;
+    justify-content: space-between; /*ช่องจะขยายเท่าๆกัน*/
+    align-items: center; /*มันจะมาอยู่แนวเดียวกัน*/
+    /* background: darkkhaki; ทำกรอบเพื่อให้รู้ขอบเขตของมัน */
+}
+.profile_info--top h1{
+    font-weight: 300;
+}
+.profile_info--top a.edit{
+    font-weight: 700;
+    text-decoration: none;
+    color: #333;
+    padding: 5em,1em;
+    border: 1px solid #e4e4e4;
+    background: transparent;
+    cursor: pointer;
+}
+.profile_info--top a.gear{
+    color: #333;
+}
+.profile_info--center{
+    display: flex;
+    max-width: 500px;
+   justify-content: space-between;
+
+}
+.profile_info--bottom{
+    margin-top: 2em;
+    max-width: 400px; /*มันจะดันคำว่าMint Chatwaroon Boonprakob*/
+}
+.tabs{
+    max-width: 960px;
+    display: flex; /*มันจะเรียงกัน  โพสต์ IGTV บันทึกไว้ มีผู้แท็ก */
+    justify-content: space-evenly; /*ระยะห่างก็จะเท่าๆกัน*/
+    margin: 0 auto; /*กำหนดกึ่งกลางให้มัน*/
+    position: relative;
+}
+.tabs:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 16px; /*ให้เส้นมาชิดกันเส้น active*/
+    border-top: 1px solid gainsboro; /*สร้างเส้น*/
+}
+.tab-item{
+    border-top: 1px solid transparent; /*ไม่มีสี*/
+    margin-top: 1em;
+    padding-top: 10px;
+    cursor: pointer; /*ตัวหนังสือจะขยับออกจากเส้น*/
+}
+.active{
+    border-top:  1px solid black;
+    padding-top: 10px; /*กำหนดเส้นสีดำของเส้นactive*/
+    z-index: 1;
+
+}
+.gallery_grid{
+    margin: 1em 0; /*บนล่าง 1em ซ้ายขวา0*/
+    width: 100%; 
+    display:grid; 
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));  /*แต่ะช่องจะให้ความสูง250px ถ้าอยู่ที่หน้าจอเล็กจะให้กว้าง1fr*/
+    grid-template-rows: repeat(3,250px); /*ให้มันมี3แถว แต่ละแถวสูง300px*/
+    grid-gap: 1.5em; /*ให้มีช่องว่าง1.5em*/
+    justify-content: center;
+    align-content: center;
+}
+.grid-img img{
+    width: 100%;
+    height: 100%;
+}
+.grid-img{
+    position: relative;
+    cursor: pointer; /*เวลาเมามาชี้จะเป็น pointer ขึ้นมา*/
+}
+.grid-img:hover:after {
+    content: ""; /*กำหนดให้มันว่างๆๆไว้ก่อน*/
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background:rgba(0,0,0,0.5); /*ใส่สีเข้าไป*/
+    top: 0;
+}
+
+
