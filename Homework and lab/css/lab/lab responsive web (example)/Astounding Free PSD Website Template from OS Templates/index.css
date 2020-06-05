@@ -1,0 +1,60 @@
+body{
+  background-color: orchid;
+   
+}
+.header{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: blue;
+}
+.container{
+    text-align: center;
+    background-color:seagreen ;
+    /* width: 40% ;
+    height: 60%; */
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+
+
+@media screen and (max-width: 480px){
+  .header{
+    width: 96%;
+    float:none ;
+  
+}
+.container{
+  width: 96%;
+  float:none ;
+   
+}
+
+
+
+
+@media screen and (max-width: 768px){
+  .header{
+    width: 96%;
+    float:none ;
+  
+}
+.container{
+  width: 96%;
+  float:none ;
+}
+
+@media screen and (max-width: 1440px){
+  .header{
+    width: 96%;
+    float:none ;
+  
+}
+.container{
+  width: 96%;
+  float:none ;
+   
+}
