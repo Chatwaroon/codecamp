@@ -1,0 +1,15 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: darkorange;
+    font-size: 30px;
+    text-align: center;
+    animation: example 5s linear 2s infinite alternate;
+  }
+  @keyframes example {
+    0%   {background-color: yellowgreen;}
+    25%  {background-color: royalblue;}
+    50%  {background-color:indianred;}
+    100% {background-color: green;}
+  }

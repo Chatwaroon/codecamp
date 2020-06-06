@@ -1,0 +1,21 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color:forestgreen;
+    animation-name: example;
+    animation-duration: 4s;
+    text-align: center;
+    margin: 0px;
+    padding: 90px;
+    font-size: 30px;
+    color: chocolate;
+    position: relative;
+    
+  }
+  
+  @keyframes example {
+    0%   {background-color:silver;}
+    25%  {background-color: teal;}
+    50%  {background-color:palevioletred;}
+    100% {background-color: blue;}
+  }
