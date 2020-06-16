@@ -1,0 +1,235 @@
+.A1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.card{
+    width: 18 rem;
+}
+.dropdown{
+    text-align: center;
+}
+.button,
+.dropdown,
+.dropdown2{
+    cursor : pointer;
+    display: inline-block; /*จัดในรูปแบบของ block มันจัดเรียงไม่สวย เลยเปลี่ยนให้เป็น  display: inline-block;*/
+    margin: auto;
+    
+}
+
+/* when mouse over change list-content from none to block ถ้าเราเลื่อนเมาผ่าน จะเปลี่ยน non ให้กลายเป็น block*/
+.dropdown:hover .list-content{
+    /* display: block; /*ช้อนไว้ */
+}
+
+/*hidden the .list-content,absoute to background color*/
+.list-content{
+    display: none;
+    width: 100px;
+}
+
+/* ตัวlist ของlink ก็จัดให้อยู่ในรูปของ block*/
+.list-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+/*--------------------------------------*/
+
+$color: #22313F;
+$background: #80CBC4;
+
+/*--------------------------------------*/
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+html {
+  font-size: 2vmin;
+}
+body {
+  background: $background;
+  display: flex;
+}
+
+/*--------------------------------------*/
+
+section {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 80px;
+  grid-row-gap: 70px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 10px; 
+  .menu{
+    background: $color;
+    position: relative;
+  }
+  .text {
+margin-top: 35px;
+    color: #22313F;
+    font-weight: 700;
+    background-image: linear-gradient(0deg, #ECF0F1, #ECF0F1);
+    box-shadow: 0px 0px 0px 5px #ECF0F1;
+    border-radius: 1px;
+  }
+}
+
+.ham-burger {
+  height: 4px;
+  width: 30px;
+  border-radius: 10px;
+  &::after, &::before {
+    content: '';
+    position: absolute;
+    background: $color;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+  } 
+  &::after {
+    top: 10px;
+    bottom: -10px;
+  }
+  &::before {
+    top: -10px;
+    bottom: 10px;
+  }
+}
+
+.kebab {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  &::after, &::before {
+    content: '';
+    position: absolute;
+    background: $color;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+  } 
+  &::after {
+    top: 10px;
+    bottom: -10px;
+  }
+  &::before {
+    top: -10px;
+    bottom: 10px;
+  }
+}
+
+.hot-dog {
+  height: 4px;
+  width: 30px;
+  border-radius: 10px;
+  &::after, &::before {
+    content: '';
+    position: absolute;
+    background: $color;
+    left: 5px;
+    right: 5px;
+    border-radius: 10px;
+  } 
+  &::after {
+    top: 10px;
+    bottom: -10px;
+  }
+  &::before {
+    top: -10px;
+    bottom: 10px;
+  }
+}
+
+.fries {
+  height: 4px;
+  width: 20px;
+  border-radius: 10px;
+  &::after, &::before {
+    content: '';
+    position: absolute;
+    background: $color;
+    left: -10px;
+    right: 0px;
+    border-radius: 10px;
+  } 
+  &::after {
+    top: 10px;
+    bottom: -10px;
+  }
+  &::before {
+    top: -10px;
+    bottom: 10px;
+  }
+}
+
+.strawberry {
+  height: 4px;
+  width: 20px;
+  border-radius: 10px;
+  &::after, &::before {
+    content: '';
+    position: absolute;
+    background: $color;
+    border-radius: 10px;
+  } 
+  &::after {
+    top: 10px;
+    bottom: -10px;
+    left: 5px;
+    right: 5px;
+  }
+  &::before {
+    top: -10px;
+    bottom: 10px;
+    left: -5px;
+    right: -5px;
+  }
+}
+
+.chocolate {
+  height: 4px;
+  width: 4px;
+  box-shadow: 8px 0px 0px $color,
+              -8px 0px 0px $color;
+  &::after, &::before {
+    content: '';
+    position: absolute;
+    background: $color;
+    left: 0px;
+    right: 0px;
+    box-shadow: 8px 0px 0px $color,
+              -8px 0px 0px $color;
+  } 
+  &::after {
+    top: 10px;
+    bottom: -10px;
+    
+  }
+  &::before {
+    top: -10px;
+    bottom: 10px;
+  }
+}

@@ -1,0 +1,29 @@
+div>div {
+    border: 1px solid purple;
+}
+
+body {
+    text-align: center;
+}
+.img {
+    text-align: center;
+}
+
+.footer {
+    margin: auto auto;
+    
+}
+h2 {
+    border: 1px solid palevioletred;
+    margin-top: 10px;
+    text-align: center;
+
+}
+div {
+    margin: 10px;
+    padding: 10px;
+}
+.row {
+    justify-content: center;
+    
+}
