@@ -57,12 +57,48 @@ console.log(message1); // อย่าลืมใส่เพื่อแสด
 // console.log(typeof value2)// *
 // console.log(typeof value3) //+
 
-let value = "9"/"2";
- let value1 = "9" - "2";
- let value2 = "9" * "2";
- let value3 = "9" + "2";
-console.log( value) // /
-console.log( value1) // -
-console.log( value2)// *
-console.log( value3) //+
+// let value = "9"/"2";
+//  let value1 = "9" - "2";
+//  let value2 = "9" * "2";
+//  let value3 = "9" + "2";
+// console.log( value) // /
+// console.log( value1) // -
+// console.log( value2)// *
+// console.log( value3) //+
+
+
+// let str ="1234" //เปลี่ยนค่าสตริงให้เป็น number 
+// console.log(typeof str)
+// str = Number(str) //ใช้number
+// console.log(str)
+// str = +str
+// console.log(str)
+
+
+
+// let str ="1234" //เปลี่ยนค่าสตริงให้เป็น number 
+// console.log(typeof str)
+
+// str =+str //ตัวเลขตัวเดียว ใส่บวกเข้าไปข้างหน้า
+// console.log(src)
+// str = String(str) //ใช้String
+// str = Number(str)
+// console.log(str)
+
+// str = String(str)
+// str = str*1
+// console.log(str)
+
+// str = String(str)
+// str = str/1
+// console.log(str)
+
+
+let str1 = "ร้อยหกสิบ" //จะเปลี่ยนตัวหนังสือ ให้กลายเป็นตัวเลข
+console.log(typeof str1); //string
+let num1 = Number (str1);
+console.log(num1);
+console.log(typeof num1);
+
+
 
