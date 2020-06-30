@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="color: darkblue;">A Simple Form</h2>
+
+        <i style="color: darkorchid;">Form Fundamentals</i> <br> <br>
+
+        <form action="/action_page.php">
+        <fieldset>
+            <legend>Customer Info </legend>
+            <label for="fname">Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter your name"><br><br>
+            <!--name-->
+            <label for="phone">Telephone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Pattern 1-234-567-8910" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+            <!-- phone-->
+            <label for="email">Email address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address">
+            <!-- email-->
+        </fieldset>
+
+        <fieldset>
+            <legend>Books</legend>
+            <input type="text" id="Books" name="Books">
+            <!-- books-->
+            <label for="quantity">Quantity (Maximum 5):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5">
+        </fieldset>
+        </form>
+        <input type="submit" value="Submit"> <br> <br>
+        <!-- submit-->
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">2011 Acme United. All rights reserved.</label>
+
+</body>
+</html>
