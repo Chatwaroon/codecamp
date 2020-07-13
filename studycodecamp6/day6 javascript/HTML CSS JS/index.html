@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 3 cores of front-end html css js </title>
+    <!-- start css------------------------------------------------------------------------------------>
+
+    <style>
+        h2{
+            font-size: 4rem; /* rem ยืดขนาดเป็นหลัง*/
+            text-align: center;
+            color: brown;
+            background-color: burlywood;
+        }
+        body{
+            background: cadetblue;
+        }
+    </style>
+
+    
+    <!--  end css------------------------------------------------------------------------------------->
+</head>
+
+
+
+
+<body>
+<!-- START html------------------------------------------------------------------------------------->
+    <h2 style="margin: 20px; padding-top: 1rem;"> Codecamp Thailand </h2>
+    <input id="in1" type="text" placeholder="Text Color">
+    <input id="in2" type="text" placeholder="Background Color">
+    <button onclick="changecolor()">change</button> <!-- คลิกแล้วเปลี่ยนสี เริ่มมีeven onclick เข้ามา ถ้าคลิกแล้วจะไปรันฟังชั่น changecolor() โดยในฟังชั่น changecolor() จะมี alert -->
+<!-- end html-------------------------------------------------------------------------------------->
+
+
+
+<!-- start script --------------------------------------------------------------------------------->
+    <script> //ต้องสามารถอ้างอิงไปยังเวปเพจ  สิ่งต่างๆที่อยู่บนเวปเพจจะเรียกว่าDOM //
+
+    function changecolor(){  // function มันรอให้คนมาเรียกทำงาน // 
+        // alert (" change color function ....") // alert จะโชว์ข้อความอะไรสักอย่าง //
+        let tcolor = document.querySelector("#in1") .value  // document คือตัวที่อยู่ในเวปเพจ ส่วนตัวที่อยู่ใน document จะเป็น . querySelector() จะเป็นตัวที่เลือกอยู่ใน document  value คือสิ่งที่ผู้ใช้ส่งมา //
+        let bcolor = document.querySelector("#in2").value  
+        // alert(tcolor)
+        // alert(bcolor)
+        alert(" hello mint")
+        document.querySelector("h2").style.color=tcolor  // รับมา แล้วมากำหนด Style ให้มัน //
+        document.querySelector("h2").style.backgroundColor=bcolor 
+            }
+
+
+    </script>
+<!-- end script---------------------------------------------------------------------------------->
+
+
+
+</body>
+</html>
