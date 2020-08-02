@@ -4,14 +4,109 @@
 //     car[0] = "Honda";
 //     car[1] = "Toyota";
 //     car[2] = "Ford";
+// var cars = new Array();
+//     car[0] = "Honda";
+//     car[1] = "Toyota";
+//     car[2] = "Ford";
+
+// var cars = new Array();
+//     car[0] = "Honda";
+//     car[1] = "Toyota";
+//     car[2] = "Ford";
+
+var cars = new Array();
+        car[0]="Honda";
+        car[1]="Toyota";
+        car[2]="Ford";
+
+
+var cars = new Array();
+        car[0]="Honda";
+        car[1]="Totota";
+        car[2]="Ford";
+
+var cars = new Array();
+        car[0]="Honda";
+        car[1]="Toyota";
+        car[2]="Ford";
+
+var cars = new Array();
+        car[0]="Honda";
+        car[1]="toyota";
+        car[2]= "Ford";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //แบบที่2
 //var cars = new Array("Honda","Toyota","Ford");
+var cars = new Array("Honda","Totota","Frod");
+var cars = new Array("Honda","toyota","ford");
+var cars = new Array("Honda","toyota","Frod");
+var cars = new Array("Honda","Totota","Frod");
+var cars = new Array("Honda","Totota","frod");
+
+  
+
+
+ 
 //////////////////////////////////////////////////////////////////////////////////////////
 // Loops จะทำซ้ำเดิมจนกว่าจะเข้าเงื่อนไข  
 // i เท่ากับ 0 ถ้า i น้อยกว่า5 ให้บวกเพิ่ม1
 // for (var i = 0; i < 5; i++){
 //     document.write("number" + i + "<br>") // document.write เขียนตัวเลขแสดงในหน้าจอ 
 // }
+
+
+for (var i = 0; i < 5 ; i++)
+    document.write("number" + i + "<br>")
+
+
+for (var i = 0; i < 5 ; i++);
+    document.write("number" + i  + "<br>")
+
+for (var i = 0 ; i < 5 ; i++);
+     document.write("number" + i + "<br>")
+
+for (var i = 0 ; i < 5 ; i++);
+    document.write("number"+ i + "<br> ") 
+
+for (var i = 0 ; i < 5 ; i++);
+    document.write("number"+ i + "<br>") 
+
+for (var i = 0 ; i < 5 ; i++);
+    document.write("number" + i + "<br>")
+
+for (var i = 0; i < 5 ; i++);
+    document.write("number" + i + "<br>")
+
+for (var i = 0; i < 5 ; i++);
+    document.write("number" + i + "<br>")
+
+for (var i = 0; i<5 ; i++);
+    document.write("number" + i + "<br>")
+
+for (var i = 0; i < 5 ; i++);
+    document.write("number" + i + "<br>")
+
+for (var i = 0 ; i < 5 ;i++);
+    document.write("number" + i + "<br>" )
+
+for (var i = 0 ; i < 5 ; i++);
+    document.write("number"+i+"<br>")
+
 //////////////////////////////////////////////////////////////////////////////////////
 //while Loop
 //  var i = 0;
@@ -19,16 +114,127 @@
 //     document.write("number" + i + "<br>"); //แล้วให้เขียนตัวเลข แล้วค่อยให้i มันเพิ่ม
 //     i++;
 //  }
+
+
+var i = 0;
+while ( i < 5){
+    document.write("number" + i + "<br>");
+    i++;
+}
+
+
+var i = 0;
+while (i<5) {
+    document.write("nunber" + i + "<br>");
+    i++;
+}
+var i =0;
+while (i < 5) {
+    document.write("number" + i + "<br>");
+    i++;
+}
+
+var i = 0 ;
+while( i < 5 ){
+    document.write("number" + i + "<br>");
+    i++;
+}
+
+var i = 0 ;
+while(i<5){
+    document.write("number" + i +"<br>");
+    i++;
+}
+
+var i =0 ;
+while(i < 5){
+    document.write("number" + i + "<br>");
+    i++;
+
+}
 ///////////////////////////////////////////////////////////////////////////////////////
 //JavaScript Functions  
 
 
-// creat a function 
-// function myFunction(){
-//     document.write("This is my function");
-// }
-//  // call a Function
-//  myFunction();
+//creat a function 
+function myFunction(){
+    document.write("This is my function");
+}
+ // call a Function
+ myFunction();
+
+
+ function myFunction(){
+     document.write("this is my function");
+ }
+  myFunction();
+
+
+  function myFunction(){
+      document.write("this is my function");
+
+  }
+  myFunction();
+
+
+  function myFunction(){
+      document.write("this is my function");
+
+  }
+  myFunction();
+
+
+  function myFunction(){
+      document.write("this is my function");
+  }
+  myFunction();
+
+  
+  function myFunction(){
+      document.write("this is my function");
+  }
+  myfunction();
+
+
+  function myfunction(){
+      document.write("this is my function");
+  }
+  myfunction();
+
+  function myfunction(){
+      document.write("this is my function");
+
+  }
+myFunction();
+
+function myfunction(){
+    document.write("this is my function");
+
+}
+myFunction();
+
+function myfunction(){
+    document.write("this is my function");
+}
+myFunction();
+
+function myfunction(){
+    document.write("this is my function");
+}
+myFunction();
+
+
+function myfunction(){
+    document.write("this is my function");
+}
+myfunction();
+
+
+function myfunction(){
+    document.write("this is my function");
+
+}
+myFunction();
 
 //////////////////////////////////////////////////////////////////////////////////////////
 // javaScript Object ทุกสิ่งที่อยู่ใน JAvascript จะเป็น object หมดเลย 
@@ -36,6 +242,52 @@
 // var greeting = "Hello";
 // var x = greeting.length; // สร้างตัวแปร var ให้มาเก็บค่าความยาวของ greeting  objrct.popertes
 // console.log(x);
+
+
+var greeting = "Hello";
+var x = greeting.length;
+console.log(x);
+
+var greeting = "Hello";
+var x = greeting.length;
+console.log(x);
+
+var greeting = "Hello";
+var x = greeting.length;
+console.log(x);
+
+var greeting = "Hello";
+var x = greeting.length;
+console.log(x);
+
+ var greeting = "Hello";
+ var x = greeting.length;
+ console.log(x);
+
+ var greeting = "Hello";
+ var x = greeting.length;
+ console.log(x);
+
+
+var greeting = "Hello";
+var x = greeting.length;
+console.log(x);
+
+var greeting = "Hello";
+var x = greeting.length;
+console.log(x);
+
+
+var greeting = "Hello";
+var x = greeting.length;
+console.log(x);
+
+var greeting = "Hello";
+var x = greeting.length;
+console.log(x);
+
+
+
 //////////////////////////////////////////////////////////////////////////////////////////
 //ตัวแปร และชนิดของข้อมูล  
 //Number
@@ -47,6 +299,51 @@
 // var number1 = 55;
 // var number2 = 40;
 // alert(number1 + number2);
+
+var number1 = 55;
+var number2 = 33;
+alert(number1+number2);
+
+var number1 = 55;
+var number2 = 33;
+alert(number1+number2);
+
+var number1 = 55;
+var number2 = 33;
+alert(number1+number2);
+
+var number1 = 55;
+var number2 = 33;
+alert(number1+number2);
+
+
+var number1 = 55;
+var number2 = 33;
+alert(number1+number2);
+
+var number1 =55;
+var number2 = 33;
+alert(number1+number2);
+
+
+var number1 =55;
+var number2 =33;
+alert(number1+number2);
+
+var number1 =55;
+var number2 = 33;
+alert(number1+number2);
+
+var number1 =55;
+var number2 =33;
+alert(number1+number2);
+
+
+
+
+
+
+
 
 
 //การตั้งชื่อตัวแปร 
@@ -69,10 +366,51 @@
 //  var color = ['red','blue','green']
 //  alert(color[1]);
 
+var color = ['red','blue','green']
+alert(color[1]);
+
+var color = ['RED','blue','green']
+alert(color[1]);
+
+var color = ['red','blue','green']
+alert(color[1]);
+
+var color = ['red','blue','green']
+alert(color[1]);
+
+var color = ['red','blue','green']
+alert(color[1]);
+
+var color = ['red','blue','green']
+alert(color[2]);
+
+
+
+
+
+
+
+
 //แบบที่2 add ค่าเพิ่ม
 //  var color = new Array ('red','bule','greem');
 //      color[3] = 'orange';
 // alert(color);
+
+var color = new Array('red','bule','green');
+    color[3]='orange';
+alert(color);
+
+var color = new Array('red','blue','green');
+    color[3]='orange';
+alert(color);
+
+var color = new Array('red','blue','green');
+    color[3]="orange";
+
+
+
+
+
 
 
 //แบบที่3 .push  วิธีการ 
@@ -80,19 +418,67 @@
 //      color.push('purple')
 // alert(color[3]);  
 
+var color = new Array('red','blue','green');
+    color.push('purple')
+alert(color[3]);
+
+var color = new Array('red','blue','green');
+    color.push('purple')
+alert(color[3]);
+
+var color = new Array('red','blue','green');
+    color.push('purple');
+alert(color[3]);
+
+
+var color = new Array('red','blue','green');
+    color.push('purple');
+alert(color[3]);
+
+
+
 
 //แบบที่4
 // var numbers = [5,77,6,43];
 // alert (numbers.length);
 
+var numbers = [2,3,4,6];
+alert(numbers.length);
+
+var numbers = [3,4,77,9];
+alert(number.length);
+
+var numbers = [3,4,3,3,2];
+alert(numbers.length)
+
 
 //แบบที่5 
 // var number = [2,1,4,3,7,8,9,5];
 // alert (number.sort()); //sort เรียงจากน้อยไปหามาก 
+var number = [2,5,8,6,4,3,6];
+alert(numbers.sort());
+
+var number = [3,5,4,3,2];
+alert(Number.sort());
+
+var number = [3,4,5,6,7,7];
+alert(numbers.sort());
+
+
+
+
 
 //แบบทีุ่ 6
 // var number = [2,1,4,3,7,8,9,5];
 // alert (number.reverse()); 
+
+var number = [2,3,4,5,7,0];
+alert(number.reverse());
+
+var number = [2,3,4,5,6,7,0];
+alert(number.reverse());
+
+
 
 
 
@@ -106,7 +492,19 @@
 
 // }
 
+for (var i = 0; i < 10 ; i++){
+    console.log(i);
+}
 
+for(var i = 0 ; i < 10 ; i++){
+    console.log(i);
+
+}
+
+for (var i = 0 ; i < 10 ; i++){
+    console.log(i);
+
+}
 // forEach loop  forEach  เมดดอด
 // var number = [2,3,4,55,64,23,50];
 // number.forEach(function(number){
@@ -130,6 +528,22 @@
 // }
 
 
+if (1 == 1){
+    console.log('this is ture');
+
+} else {
+    console.log('this is false');
+}
+
+
+if (1 == 1 ){
+    console.log('this is ture');
+
+} else {
+    console.log('this is false');
+}
+
+
 // var num1 = 3;
 // var num2 = 4;
 // if (num1 == num2){
@@ -137,16 +551,57 @@
 // } else {
 //     console.log("this is false")
 // }
+
+var num1 =3;
+var num2 =4;
+if (num1==mun2){
+    console.log('this is ture')
+} else {
+    console.log('this is false')
+}
+
+var num1 =3;
+var num2 =4;
+if (num1==num2){
+    console.log('this is ture')
+} else {
+    console.log('this is false')
+}
   
 
-// var num1 = 3;
+// var num1 = 3; 
 // var num2 = 4;
 // if (num1 == num2 || num1 == 3){
 //     console.log('this is true')
 // } else {
 //     console.log("this is false")
 // }
+
+ var num1 =3;
+ var num2 =4;
+ if (num1 == num2 || num1 == 3){
+     console.log('this is ture')
+ } else {
+     console.log('this is false')
+ }
+
   
+ var num1 = 3;
+ var num2 = 4;
+ if (num1=num2 || num1 == 3){
+      console.log('this is ture')
+ } else {
+     console.log('this is false')
+ }
+
+
+var num1 =3;
+var num2 =4;
+if (num1 = num2 || num1 == 3){
+    console.log('this is ture')
+} else {
+    console.log('this is false0 ')
+}
 
 // var fruit = "watermalon";
 
