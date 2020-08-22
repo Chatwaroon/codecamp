@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- การเขียนเงื่อนไข  -->
+    <script>
+        // 1.Browser จะโชว์ข้อความ "Hello Codecamp#5 ไหม"
+        if("0"){
+            alert('Hello Codecamp#5');
+        }
+        // ตอบ โชว์ข้อความ "Hello Codecamp#5
+
+
+
+        // 2.ใช้ if else ในการเขียนถามชื่อของคุณ ถ้าตอบถูกให้แสดงคำว่าเก่งมาก ถ้าตอบผิดให้แสดงคำว่า คุณไม่รู้จักฉัน
+
+        let name = prompt('What is your name', '');
+        if (name == 'Mint') {
+        alert('You are very good');
+        } else {
+        alert('You do not know me');
+        }
+
+        //  3.ใช้ prompt ในการรับคะแนนคำนวนเกรด
+
+         let grade = prompt('Your score is', '');
+        if (grade > 80) {
+        alert( 'grade A' );
+        } else if (grade > 70) {
+        alert( 'grade B' );
+        } else if (grade > 60) {
+        alert( 'grade C' );
+        } else if (grade > 50) {
+        alert( 'grade D' );
+        } else {
+        alert( 'grade f' );
+        }
+
+        // 4.เปลี่่ยน if - else ให้อยู่ในรูป ternary ongotpointercapture
+        let age = prompt("How old are you");
+        let price;
+        price = (age < 18)? "price 2000" :"price 3500 "
+        alert(price);
+    </script>
+</body>
+</html>
